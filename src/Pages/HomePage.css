@@ -1,0 +1,37 @@
+.homepage-maincontainer {
+    min-height: 750px;
+    width: 100%;
+
+}
+
+.homepage-container1 {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.imageslider {
+    width: 80%;
+}
+
+.homepage-container1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.movieslist {
+    width: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .homepage-container1 {
+        height: 25vh;
+    }
+
+    .imageslider {
+        width: 100%;
+    }
+}

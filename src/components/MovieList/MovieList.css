@@ -1,0 +1,133 @@
+.movie-list {
+    width: 96%;
+    padding: 0px;
+}
+
+.movie-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    height: 360px;
+    width: 98%;
+}
+
+.movie-list h2 {
+    padding-left: 20px;
+}
+
+.movie-list li {
+    position: relative;
+    background-color: #333;
+    border-radius: 15px;
+    color: white;
+    height: 300px;
+    width: 300px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
+.movie-list li::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.movie-list li:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+
+.movie-list li:hover {
+    transform: scale(1.05);
+}
+
+/* Optional - to hide scrollbar for a cleaner look */
+.movie-list ul::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-list ul {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.movie-list li:hover {
+    transform: scale(1.05);
+}
+
+.movie-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.movie-list {
+    background-color: white;
+    /* Semi-transparent black for readability */
+    position: relative;
+    color: black;
+    min-height: 400px;
+}
+
+.movie-content {
+    background-color: transparent;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.movie-list li:hover .movie-content {
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+}
+
+.movie-list span {
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.movie-list p {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (max-width:700px) {
+    .movie-list {
+        width: 88%;
+    }
+
+    .movie-list ul {
+        width: 90%;
+    }
+}

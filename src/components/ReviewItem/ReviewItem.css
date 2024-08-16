@@ -1,0 +1,56 @@
+.editbtn {
+    height: 30px;
+    width: 80px;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deletebtn {
+    height: 30px;
+    width: 80px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.review-actions {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ratingcolor {
+    color: goldenrod;
+}
+
+.ratingcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.edittextarea {
+    height: 60px;
+    width: 90%;
+}
+
+.savebtn {
+    height: 30px;
+    width: 80px;
+    background-color: blueviolet;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
